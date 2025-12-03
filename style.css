@@ -1,0 +1,82 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#charInput {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+}
+
+.results-panel h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 0;
+    color: #555;
+}
+
+#resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#resultsTable th, #resultsTable td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#resultsTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    width: 40%;
+}
+
+#resultsTable td {
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    color: #0056b3;
+}
+
+.status-error {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}

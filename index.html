@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字元編碼查詢工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 字元編碼查詢工具</h1>
+        
+        <div class="input-group">
+            <label for="charInput">輸入字元：</label>
+            <input type="text" id="charInput" maxlength="1" placeholder="請輸入一個字元 (如: A, 你, €)" autofocus>
+        </div>
+
+        <div class="results-panel">
+            <h2>結果</h2>
+            <p id="statusMessage" class="status-error">請輸入一個字元來查詢。</p>
+
+            <table id="resultsTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>編碼類型</th>
+                        <th>結果</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>原始字元</td><td id="res_char"></td></tr>
+                    <tr><td>Unicode (Code Point)</td><td id="res_unicode"></td></tr>
+                    <tr><td>ASCII / Dec (十進制)</td><td id="res_decimal"></td></tr>
+                    <tr><td>Hex (十六進制)</td><td id="res_hex"></td></tr>
+                    <tr><td>HTML 實體碼 (Decimal)</td><td id="res_html_dec"></td></tr>
+                    <tr><td>HTML 實體碼 (Hex)</td><td id="res_html_hex"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
